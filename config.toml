@@ -1,0 +1,10 @@
+max_workers = 30
+worker_keep_alive_secs = 10
+host = "0.0.0.0"
+port = 8080
+http1_keep_alive = true
+http1_half_close = false
+http1_max_buf_size = 524288  # 512kb
+http2_max_send_buf_size = 524288  # 512kb
+http2_only = false
+http2_adaptive_window = true

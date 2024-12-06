@@ -1,0 +1,67 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debug and profiling artifacts
+*.pdb
+perf.data
+perf.data.old
+flamegraph.svg
+
+# Environment and configuration
+.env
+.env.local
+config.local.toml
+
+# Generated documentation
+/doc/
+/target/doc/
+
+# Test artifacts
+*.profraw
+coverage/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*.[Bb]ak
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# Binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Dependencies
+/vendor/
+node_modules/
+
+# Project-specific ignores
+/dist/
+/build/
+.cargo-ok

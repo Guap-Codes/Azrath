@@ -1,0 +1,31 @@
+[package]
+name = "azrath"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["guap-codes"]
+description = "A hybrid blocking/async HTTP server built on hyper."
+repository = "https://github.com/guap-codes/azrath"
+keywords = ["http", "hyper", "web"]
+categories = ["http", "web", "network-programming", "web-programming::http-server"]
+
+[features]
+default = ["http2"]
+http2 = ["hyper/http2"]
+
+[dependencies]
+log = "0.4.17"
+num_cpus = "1.15.0"
+tokio = { version = "1.14.1", features = ["full"] }
+futures = "0.3.25"
+async-trait = "0.1"
+hyper = { version = "0.14.23", features = ["http1", "server", "stream"], optional = true }
+mio = { version = "0.8.5", features = ["os-poll", "net"] }
+thiserror = "1.0"
+config = "0.13"
+serde = { version = "1.0", features = ["derive"] }
+dotenv = "0.15"
+
+
+[dev-dependencies]
+matchit = "0.7.0"
