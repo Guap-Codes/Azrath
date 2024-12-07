@@ -97,7 +97,7 @@ Azrath is built on several key components:
 
 ## Configuration
 
-Azrath can be configured through environment variables or a config file:
+Azrath can be configured through a config file:
 
 ```toml
 # config.toml
